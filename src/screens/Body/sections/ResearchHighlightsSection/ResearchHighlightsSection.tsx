@@ -1,0 +1,65 @@
+const researchers = [
+  {
+    name: "DR. NEHA KAPOOR",
+    image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-14.png",
+  },
+  {
+    name: "DR. SURAJ K SINGH",
+    image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-15.png",
+  },
+  {
+    name: "DR. ANKUR JAIN",
+    image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-16.png",
+  },
+  {
+    name: "DR. SARMAD MOIN",
+    image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-17.png",
+  },
+  {
+    name: "DR. KISHAN KUMAR",
+    image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-18.png",
+  },
+  {
+    name: "KRITI SHRIVASTAV",
+    image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-19.png",
+  },
+];
+
+export const ResearchHighlightsSection = (): JSX.Element => {
+  return (
+    <section className="w-full flex flex-col items-center py-10">
+      {/* Section heading */}
+      <div className="flex flex-col items-center mb-6">
+        <h2 className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[34.6px] text-center tracking-[1.75px] leading-[44.9px]">
+          HIGHLIGHTS OF OUR PURSUIT OF IMPACTFUL
+          <br />
+          RESEARCH &amp; GLOBAL EXCELLENCE
+        </h2>
+        {/* Gold divider bar */}
+        <div className="mt-4 w-24 h-2 bg-[#c1963f] rounded-full" />
+      </div>
+
+      {/* Researcher profile cards */}
+      <div className="flex flex-row flex-wrap justify-center gap-[25.1px] mt-4">
+        {researchers.map((researcher, index) => (
+          <div key={index} className="flex flex-col items-center gap-[16.7px]">
+            {/* Photo card */}
+            <div className="w-[170.5px] h-[227.33px] rounded-[16.7px] overflow-hidden shadow-[0px_10.44px_10.44px_-5.22px_#0000000a,0px_20.88px_26.1px_-5.22px_#0000001a]">
+              <img
+                className="w-full h-full object-cover"
+                alt={researcher.name}
+                src={researcher.image}
+              />
+            </div>
+            {/* Name label */}
+            <div className="flex items-center justify-center w-[170.5px]">
+              <span className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[12.5px] text-center tracking-[1.25px] leading-[18.8px] whitespace-nowrap">
+                {researcher.name}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};

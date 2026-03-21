@@ -1,0 +1,1 @@
+export { ScholarshipInfoSection } from "./ScholarshipInfoSection";
