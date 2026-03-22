@@ -1,3 +1,12 @@
+import img1 from "../../../../assets/image-1.jpg";
+import img2 from "../../../../assets/image-2.jpg";
+import img3 from "../../../../assets/image-3.jpg";
+import img4 from "../../../../assets/image-4.jpg";
+import img5 from "../../../../assets/image-5.jpg";
+import img6 from "../../../../assets/image-6.jpg";
+import img7 from "../../../../assets/image-7.jpg";
+import img8 from "../../../../assets/image-8.jpeg";
+
 export const CampusLifeGallerySection = (): JSX.Element => {
   return (
     <section className="w-full flex bg-[#f6f7f8] py-14">
@@ -13,42 +22,46 @@ export const CampusLifeGallerySection = (): JSX.Element => {
           </p>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full auto-rows-[200px] md:auto-rows-[277px]">
-          {/* Large image - spans 2 cols and 2 rows */}
-          <div className="sm:row-span-2 sm:col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
-            <img
-              className="w-full h-full object-cover"
-              alt="Campus life"
-              src="https://c.animaapp.com/mn0n10j9vDypoz/img/image-1-1.png"
-            />
+        {/* Gallery Grids Container */}
+        <div className="flex flex-col gap-4">
+          {/* Gallery Grid 1 */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full auto-rows-[200px] md:auto-rows-[277px]">
+            {/* Large image - spans 2 cols and 2 rows */}
+            <div className="sm:row-span-2 sm:col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
+              <img className="w-full h-full object-cover" alt="Campus life" src={img1} />
+            </div>
+            {/* Top-right first image */}
+            <div className="col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
+              <img className="w-full h-full object-cover" alt="Campus life" src={img2} />
+            </div>
+            {/* Top-right second image */}
+            <div className="col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
+              <img className="w-full h-full object-cover" alt="Campus life" src={img3} />
+            </div>
+            {/* Bottom-right wide image - spans 2 cols */}
+            <div className="sm:col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
+              <img className="w-full h-full object-cover" alt="Campus life" src={img4} />
+            </div>
           </div>
 
-          {/* Top-right first image */}
-          <div className="col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
-            <img
-              className="w-full h-full object-cover"
-              alt="Campus life"
-              src="https://c.animaapp.com/mn0n10j9vDypoz/img/image-2.png"
-            />
-          </div>
-
-          {/* Top-right second image */}
-          <div className="col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
-            <img
-              className="w-full h-full object-cover"
-              alt="Campus life"
-              src="https://c.animaapp.com/mn0n10j9vDypoz/img/image-3.png"
-            />
-          </div>
-
-          {/* Bottom-right wide image - spans 2 cols */}
-          <div className="sm:col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
-            <img
-              className="w-full h-full object-cover"
-              alt="Campus life"
-              src="https://c.animaapp.com/mn0n10j9vDypoz/img/image-5.png"
-            />
+          {/* Gallery Grid 2 */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full auto-rows-[200px] md:auto-rows-[277px]">
+            {/* Large image - spans 2 cols and 2 rows */}
+            <div className="sm:row-span-2 sm:col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
+              <img className="w-full h-full object-cover" alt="Campus life" src={img5} />
+            </div>
+            {/* Top-right first image */}
+            <div className="col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
+              <img className="w-full h-full object-cover" alt="Campus life" src={img6} />
+            </div>
+            {/* Top-right second image */}
+            <div className="col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
+              <img className="w-full h-full object-cover" alt="Campus life" src={img7} />
+            </div>
+            {/* Bottom-right wide image - spans 2 cols */}
+            <div className="sm:col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
+              <img className="w-full h-full object-cover" alt="Campus life" src={img8} />
+            </div>
           </div>
         </div>
       </div>

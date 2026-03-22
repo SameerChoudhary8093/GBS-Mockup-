@@ -67,7 +67,7 @@ export const FAQAndAdvantagesSection = (): JSX.Element => {
           </div>
           <div className="w-[79.64px] h-[3.32px] bg-[#c1963f] rounded-full mb-10" />
           <div className="w-full max-w-[638px]">
-            <Accordion type="single" defaultValue="faq-1" collapsible className="flex flex-col gap-3">
+            <Accordion type="single" collapsible className="flex flex-col gap-3">
               {faqItems.map((item) => (
                 <AccordionItem key={item.id} value={item.id} className="bg-[#ffffff0d] rounded-[9.03px] border border-[#ffffff1a] px-[18px] overflow-hidden">
                   <AccordionTrigger className="[font-family:'Lexend',Helvetica] font-bold text-white text-[13.5px] tracking-[0] leading-[21.1px] hover:no-underline py-[18px] text-left">

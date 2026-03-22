@@ -1,7 +1,11 @@
+import imgNeha from "../../../../assets/NEHA.png";
+import imgAnkur from "../../../../assets/ANKUR.png";
+import imgSarmad from "../../../../assets/SARMAD.png";
+
 const researchers = [
   {
     name: "DR. NEHA KAPOOR",
-    image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-14.png",
+    image: imgNeha,
   },
   {
     name: "DR. SURAJ K SINGH",
@@ -9,11 +13,11 @@ const researchers = [
   },
   {
     name: "DR. ANKUR JAIN",
-    image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-16.png",
+    image: imgAnkur,
   },
   {
     name: "DR. SARMAD MOIN",
-    image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-17.png",
+    image: imgSarmad,
   },
   {
     name: "DR. KISHAN KUMAR",
@@ -45,7 +49,7 @@ export const ResearchHighlightsSection = (): JSX.Element => {
             {/* Photo card natively rendered grayscale */}
             <div className="w-[170.5px] h-[227.33px] rounded-[16.7px] overflow-hidden shadow-[0px_10.44px_10.44px_-5.22px_#0000000a,0px_20.88px_26.1px_-5.22px_#0000001a]">
               <img
-                className="w-full h-full object-cover grayscale contrast-125"
+                className="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply"
                 alt={researcher.name}
                 src={researcher.image}
               />

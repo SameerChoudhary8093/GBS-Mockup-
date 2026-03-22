@@ -7,7 +7,7 @@ export const ScholarshipInfoSection = (): JSX.Element => {
   };
 
   const handleBrochure = () => {
-    alert("Brochure download will be available shortly. Please check your email or contact admissions@gyanvihar.org");
+    window.open("https://limegreen-chinchilla-422071.hostingersite.com/wp-content/uploads/2026/03/fee-structure-with-engineering.pdf", "_blank");
   };
 
   return (

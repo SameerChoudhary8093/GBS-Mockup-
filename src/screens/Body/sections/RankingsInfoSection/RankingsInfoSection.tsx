@@ -57,17 +57,13 @@ export const RankingsInfoSection = (): JSX.Element => {
             {rankingItems.map((item) => (
               <div
                 key={item.subject}
-                className="w-[68px] h-[62px] bg-slate-50 rounded-lg relative"
+                className="bg-slate-50 rounded-xl flex flex-col items-center justify-center p-3 min-h-[68px] min-w-min"
               >
-                <div className="absolute top-2 left-2">
-                  <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-2xl tracking-[0] leading-8 whitespace-nowrap">
-                    {item.rank}
-                  </div>
+                <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-2xl tracking-[0] leading-none mb-1">
+                  {item.rank}
                 </div>
-                <div className="absolute top-10 left-2">
-                  <div className="[font-family:'Lato',Helvetica] font-black text-slate-500 text-[9px] tracking-[0] leading-[13.5px] whitespace-nowrap">
-                    {item.subject}
-                  </div>
+                <div className="[font-family:'Lato',Helvetica] font-black text-slate-500 text-[10px] tracking-[0.5px] whitespace-nowrap">
+                  {item.subject}
                 </div>
               </div>
             ))}

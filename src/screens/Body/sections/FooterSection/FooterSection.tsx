@@ -1,18 +1,19 @@
 import { Button } from "../../../../components/ui/button";
 
 const quickLinks = [
-  { label: "Admission Procedure", href: "#hero" },
-  { label: "Course Fee Structure", href: "#programs" },
-  { label: "Scholarship Details", href: "#scholarship" },
-  { label: "Placements Cell", href: "#student-success" },
-  { label: "Anti-Ragging Policy", href: "#footer" },
+  { label: "Admission Procedure", href: "https://sgvu.edu.in/admission-procedure" },
+  { label: "Course Fee Structure", href: "https://www.gyanvihar.org/fees-structure" },
+  { label: "Scholarship Details", href: "https://www.gyanvihar.org/wp-content/uploads/attach/sgvu-scholarships.pdf" },
+  { label: "Placements Cell", href: "https://www.gyanvihar.org/placement" },
+  { label: "Anti-Ragging Policy", href: "https://www.gyanvihar.org/uploads/Anti_Ragging_Committee_Squad_and_Monitoring_Cell_2024_7b5e021e97.pdf" },
 ];
 
 const socialIcons = [
-  { alt: "Linkedin", src: "https://c.animaapp.com/mn0n10j9vDypoz/img/linkedin-.svg", href: "https://linkedin.com" },
-  { alt: "Insta", src: "https://c.animaapp.com/mn0n10j9vDypoz/img/insta.svg", href: "https://instagram.com" },
-  { alt: "X", src: "https://c.animaapp.com/mn0n10j9vDypoz/img/x.svg", href: "https://x.com" },
-  { alt: "Dribbble", src: "https://c.animaapp.com/mn0n10j9vDypoz/img/dribbble.svg", href: "https://dribbble.com" },
+  { alt: "Linkedin", src: "https://c.animaapp.com/mn0n10j9vDypoz/img/linkedin-.svg", href: "https://learning.linkedin.com/for-higher-education" },
+  { alt: "Insta", src: "https://c.animaapp.com/mn0n10j9vDypoz/img/insta.svg", href: "https://www.instagram.com/sureshgyanvihar.university/" },
+  { alt: "X", src: "https://c.animaapp.com/mn0n10j9vDypoz/img/x.svg", href: "https://x.com/SureshGyanVihar?mx=2" },
+  { alt: "Facebook", src: "https://c.animaapp.com/mn0n10j9vDypoz/img/dribbble.svg", href: "https://www.facebook.com/sureshgyanviharuniversityjaipur" },
+  { alt: "Youtube", src: "https://c.animaapp.com/mn0n10j9vDypoz/img/frame.svg", href: "https://www.youtube.com/channel/UCXCA8AXoD-7h_0-9Num54zg" },
 ];
 
 const contactItems = [
@@ -57,11 +58,10 @@ export const FooterSection = (): JSX.Element => {
             </p>
             <div className="flex items-center gap-3 mt-1">
               {socialIcons.map((icon) => (
-                <a key={icon.alt} href={icon.href} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
-                  <img className="w-9 h-9" alt={icon.alt} src={icon.src} />
+                <a key={icon.alt} href={icon.href} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity flex items-center justify-center">
+                  <img className={icon.alt === "Youtube" ? "w-[27px] h-[19px]" : "w-9 h-9"} alt={icon.alt} src={icon.src} />
                 </a>
               ))}
-              <img className="w-[27px] h-[19px]" alt="Frame" src="https://c.animaapp.com/mn0n10j9vDypoz/img/frame.svg" />
             </div>
           </div>
 
@@ -72,10 +72,10 @@ export const FooterSection = (): JSX.Element => {
             </div>
             <div className="flex flex-col gap-[15px]">
               {quickLinks.map((link) => (
-                <button key={link.label} onClick={() => scrollTo(link.href)}
-                  className="[font-family:'Lato',Helvetica] font-normal text-slate-400 text-[13.5px] tracking-[0] leading-[19.2px] whitespace-nowrap hover:text-white transition-colors bg-transparent border-0 text-left cursor-pointer p-0">
+                <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer"
+                  className="[font-family:'Lato',Helvetica] font-normal text-slate-400 text-[13.5px] tracking-[0] leading-[19.2px] whitespace-nowrap hover:text-white transition-colors bg-transparent border-0 text-left cursor-pointer p-0 no-underline block w-fit">
                   {link.label}
-                </button>
+                </a>
               ))}
             </div>
           </div>

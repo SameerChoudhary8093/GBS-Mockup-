@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
 
 const testimonials = [
@@ -30,6 +30,13 @@ const testimonials = [
 
 export const TestimonialsSection = (): JSX.Element => {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % testimonials.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="w-full bg-slate-50 py-12 px-4">

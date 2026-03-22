@@ -21,14 +21,6 @@ export const StudentSuccessOverviewSection = (): JSX.Element => {
               Our students stand out with exceptional placements, driven by a future-ready curriculum, industry collaborations, and hands-on exposure that fosters innovation and professional excellence.
             </p>
           </div>
-          <div className="flex items-center gap-3">
-             <div className="w-10 h-10 rounded bg-[#1e3a6a] hover:bg-[#254682] flex items-center justify-center cursor-pointer transition-colors border border-[#83a3df20] shadow-[0px_4px_10px_rgba(0,0,0,0.3)]">
-                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 1L1 5L5 9" stroke="#cbd5e1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-             </div>
-             <div className="w-10 h-10 rounded bg-[#1e3a6a] hover:bg-[#254682] flex items-center justify-center cursor-pointer transition-colors border border-[#83a3df20] shadow-[0px_4px_10px_rgba(0,0,0,0.3)]">
-                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#cbd5e1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-             </div>
-          </div>
         </div>
 
         {/* Right Side: Slider */}
