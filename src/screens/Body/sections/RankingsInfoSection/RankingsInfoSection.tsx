@@ -11,9 +11,9 @@ export const RankingsInfoSection = (): JSX.Element => {
     <section className="relative w-full bg-white rounded-xl shadow-[0px_4px_6px_-2px_#0000000d,0px_10px_30px_-5px_#0000001a]">
       <div className="flex flex-col gap-8 py-12 px-4">
         {/* Main rankings row */}
-        <div className="flex items-start">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 w-full">
           {/* NIRF Logo + Label */}
-          <div className="ml-[83px] mt-4 flex flex-col items-center relative w-[154px] shrink-0">
+          <div className="flex flex-col items-center relative w-[154px] shrink-0">
             <div className="relative flex items-center justify-center overflow-visible">
               <img
                 className="w-[215px] h-[68px] object-contain"
@@ -27,7 +27,7 @@ export const RankingsInfoSection = (): JSX.Element => {
           </div>
 
           {/* Rank #1 Card */}
-          <div className="ml-[109px] shrink-0 w-[356px] h-[106px] relative rounded-2xl border border-solid border-[#0d244b1a] bg-[linear-gradient(179deg,rgba(255,157,0,0.51)_0%,rgba(255,255,255,0.51)_52%,rgba(17,255,0,0.51)_100%),linear-gradient(0deg,rgba(13,36,75,0.05)_0%,rgba(13,36,75,0.05)_100%)]">
+          <div className="shrink-0 w-full max-w-[356px] h-[106px] relative rounded-2xl border border-solid border-[#0d244b1a] bg-[linear-gradient(179deg,rgba(255,157,0,0.51)_0%,rgba(255,255,255,0.51)_52%,rgba(17,255,0,0.51)_100%),linear-gradient(0deg,rgba(13,36,75,0.05)_0%,rgba(13,36,75,0.05)_100%)] mx-auto lg:mx-0">
             {/* RANK NO. label */}
             <div className="absolute top-[43px] left-[31px] flex">
               <div className="[font-family:'Lato',Helvetica] font-black text-[#c1963f] text-[19.8px] text-center tracking-[-0.99px] leading-[23.8px]">
@@ -53,7 +53,7 @@ export const RankingsInfoSection = (): JSX.Element => {
           </div>
 
           {/* Subject-specific rankings grid */}
-          <div className="ml-[34px] mt-[22px] pl-10 border-l border-slate-100 grid grid-cols-4 gap-6 shrink-0">
+          <div className="lg:pl-10 lg:border-l border-slate-100 grid grid-cols-2 md:grid-cols-4 gap-6 shrink-0 w-full md:w-auto mt-4 lg:mt-0">
             {rankingItems.map((item) => (
               <div
                 key={item.subject}
@@ -75,8 +75,8 @@ export const RankingsInfoSection = (): JSX.Element => {
         </div>
 
         {/* Subtitle row */}
-        <div className="flex justify-start ml-[337px]">
-          <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b99] text-xs text-center tracking-[3.60px] leading-[18px] whitespace-nowrap">
+        <div className="flex justify-center w-full mt-4">
+          <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b99] text-[10px] md:text-xs text-center tracking-[2px] md:tracking-[3.60px] leading-[18px] w-full px-4">
             AHEAD OF MANY STATE &amp; PRIVATE UNIVERSITIES IN THE REGION
           </div>
         </div>

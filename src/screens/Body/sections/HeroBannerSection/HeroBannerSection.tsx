@@ -82,12 +82,12 @@ export const HeroBannerSection = (): JSX.Element => {
       </div>
 
       {/* Main content */}
-      <div className="relative w-full flex flex-col lg:flex-row items-start px-4 md:px-10 py-8 md:py-[39px] gap-8">
+      <div className="relative w-full flex flex-col lg:flex-row items-center lg:items-start px-4 md:px-10 py-8 md:py-[39px] gap-8">
         {/* Left: Hero text */}
         <div className="flex flex-col flex-1 min-w-0 pt-8 md:pt-[174px]">
           <div className="mb-[35px]">
             <h1 className="[font-family:'Lato',Helvetica] font-normal text-transparent text-[32px] md:text-[47.1px] tracking-[0] leading-tight md:leading-[47.1px]" style={{ textShadow: "0px 3.93px 2.95px #00000012, 0px 1.96px 1.96px #0000000f" }}>
-              <span className="font-black text-white">SGVU&#39;s Final-Year students<br />getting </span>
+              <span className="font-black text-white">SGVU's Final-Year students<br />getting </span>
               <span className="font-black text-[#c1963f] underline">Highest Package</span>
             </h1>
           </div>
@@ -113,25 +113,48 @@ export const HeroBannerSection = (): JSX.Element => {
           </div>
 
           {/* Student profiles */}
-          <div className="relative h-[86px]">
-            {studentProfiles.map((profile, index) => (
-              <div key={index} className={`absolute top-2 ${profile.left} w-[79px] h-[79px] rounded-full overflow-hidden border-[3.93px] border-solid border-[#c1963f] shadow-[0px_24.55px_49.1px_-11.78px_#00000040] bg-[#ffffff01]`}>
-                <div className="mt-[3.9px] w-[70.7px] h-[70.7px] ml-[3.9px] overflow-hidden rounded-full" style={{ background: `url(${profile.bgUrl}) 50% 50% / cover` }}>
-                  <div className="w-full h-full" style={{ background: `url(${profile.imgUrl}) 50% 50% / cover`, width: "100%", height: "100%" }} />
+          <div className="relative mt-2 flex items-center h-[110px] sm:h-[120px]">
+            <div className="flex relative z-10 w-[240px] h-full items-start pt-[10px]">
+              {/* Profile 1 */}
+              <div className="flex flex-col items-center absolute left-0 z-30 group">
+                <div className="w-[84px] h-[84px] rounded-full overflow-hidden border-[3px] border-solid border-[#c1963f] shadow-lg flex items-center justify-center">
+                  <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[0].bgUrl}) 50% 50% / cover` }}>
+                    <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[0].imgUrl}) 50% 50% / cover` }} />
+                  </div>
                 </div>
+                <div className="mt-2 [font-family:'Lato',Helvetica] font-black text-[#c1963f] text-[14px] leading-none whitespace-nowrap drop-shadow-md">1.8 CR</div>
               </div>
-            ))}
-            <div className="absolute top-[63px] left-[65px] [font-family:'Lato',Helvetica] font-black text-[#c1963f] text-[11.3px] tracking-[-0.28px] leading-[10.8px] whitespace-nowrap">1.8 CR</div>
-            <div className="absolute top-[63px] left-[125px] [font-family:'Lato',Helvetica] font-black text-white text-[11.3px] tracking-[-0.28px] leading-[10.8px] whitespace-nowrap">40 LPA</div>
-            <div className="absolute top-[63px] left-[189px] [font-family:'Lato',Helvetica] font-black text-white text-[11.3px] tracking-[-0.28px] leading-[10.8px] whitespace-nowrap">20 LPA</div>
-            <div className="absolute top-[31px] left-[189px] w-[103px] h-[33px] flex items-center justify-center bg-[#c1963f33] rounded-full border-[0.98px] border-solid border-[#c1963f66] backdrop-blur-[3.93px]">
-              <span className="[font-family:'Lato',Helvetica] font-black text-white text-[11.3px] tracking-[-0.28px] leading-[10.8px] whitespace-nowrap">JOIN THEM TODAY</span>
+
+              {/* Profile 2 */}
+              <div className="flex flex-col items-center absolute left-[66px] z-20 group">
+                <div className="w-[84px] h-[84px] rounded-full overflow-hidden border-[3px] border-solid border-[#c1963f] shadow-lg flex items-center justify-center">
+                  <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[1].bgUrl}) 50% 50% / cover` }}>
+                    <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[1].imgUrl}) 50% 50% / cover` }} />
+                  </div>
+                </div>
+                <div className="mt-2 [font-family:'Lato',Helvetica] font-black text-white text-[14px] leading-none whitespace-nowrap drop-shadow-md">40 LPA</div>
+              </div>
+
+              {/* Profile 3 */}
+              <div className="flex flex-col items-center absolute left-[132px] z-10 group">
+                <div className="w-[84px] h-[84px] rounded-full overflow-hidden border-[3px] border-solid border-[#c1963f] shadow-lg flex items-center justify-center">
+                  <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[2].bgUrl}) 50% 50% / cover` }}>
+                    <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[2].imgUrl}) 50% 50% / cover` }} />
+                  </div>
+                </div>
+                <div className="mt-2 [font-family:'Lato',Helvetica] font-black text-white text-[14px] leading-none whitespace-nowrap drop-shadow-md">20 LPA</div>
+              </div>
+            </div>
+
+            {/* JOIN THEM TODAY Pill */}
+            <div className="absolute left-[180px] top-[26px] z-0 h-[52px] w-[140px] pl-[40px] pr-4 flex justify-start items-center bg-[linear-gradient(90deg,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0.1)_100%)] border-[1.5px] border-[#c1963f] rounded-r-full backdrop-blur-[6px] shadow-lg">
+              <span className="[font-family:'Lato',Helvetica] font-extrabold text-white text-[14.5px] leading-[1.1] text-left whitespace-pre-line tracking-tight drop-shadow-md">JOIN THEM<br />TODAY</span>
             </div>
           </div>
         </div>
 
         {/* Right: Admission form */}
-        <div className="w-full lg:w-[420px] xl:w-[calc(100%-803px)] lg:min-w-[380px] pt-4 lg:flex-shrink-0">
+        <div className="w-full lg:w-[420px] xl:w-[450px] lg:min-w-[380px] pt-4 lg:flex-shrink-0 z-10">
           <Card className="bg-white rounded-2xl border border-solid border-slate-100 shadow-[0px_10px_10px_-5px_#0000000a,0px_20px_25px_-5px_#0000001a]">
             <CardContent className="flex flex-col items-start gap-6 pt-8 pb-12 px-8">
               {submitted ? (

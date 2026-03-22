@@ -30,7 +30,7 @@ const faqItems = [
   {
     id: "faq-5",
     question: "Does the curriculum ensure that I am industry-ready?",
-    answer: "Yes. SGVU&#39;s curriculum is co-designed with industry leaders and regularly updated to reflect evolving market demands. Students get hands-on exposure through live projects, industry immersion, Centres of Excellence, and a robust placement cell with 125+ recruiting companies.",
+    answer: "Yes. SGVU's curriculum is co-designed with industry leaders and regularly updated to reflect evolving market demands. Students get hands-on exposure through live projects, industry immersion, Centres of Excellence, and a robust placement cell with 125+ recruiting companies.",
   },
 ];
 

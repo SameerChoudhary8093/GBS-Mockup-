@@ -50,7 +50,7 @@ export const FooterSection = (): JSX.Element => {
           {/* Column 1: Logo, description, social icons */}
           <div className="flex flex-col gap-0">
             <div className="w-[245px] h-[59px] mb-[22px]">
-              <div className="w-full h-full [background:url(https://c.animaapp.com/mn0n10j9vDypoz/img/container-1.png)_50%_50%_/_cover]" />
+              <div className="w-full h-full [background:url(https://c.animaapp.com/mn0n10j9vDypoz/img/container-1.png)_50%_50%_/_cover] brightness-0 invert" />
             </div>
             <p className="[font-family:'Lato',Helvetica] font-normal text-slate-400 text-[13.5px] tracking-[0] leading-[21.9px] mb-[22px]">
               Suresh Gyan Vihar University is a self-financed state university located in Jaipur, Rajasthan, India. In 2017, the university became the first private university in Rajasthan to be awarded an &#39;A&#39; grade by NAAC.

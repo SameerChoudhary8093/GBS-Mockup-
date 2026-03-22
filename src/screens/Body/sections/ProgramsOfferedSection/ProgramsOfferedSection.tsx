@@ -49,8 +49,6 @@ const programsByTab: Record<string, { id: number; imgSrc: string; imgAlt: string
 export const ProgramsOfferedSection = (): JSX.Element => {
   const [activeTab, setActiveTab] = useState("diploma");
   const cards = programsByTab[activeTab] || [];
-  const row1 = cards.slice(0, 7);
-  const row2 = cards.slice(7);
 
   return (
     <section className="w-full bg-[#0d244b] overflow-hidden py-[51px]">
@@ -68,14 +66,14 @@ export const ProgramsOfferedSection = (): JSX.Element => {
         </p>
       </div>
 
-      {/* Tabs - scrollable on mobile */}
-      <div className="px-4 md:px-[57px] overflow-x-auto">
-        <div className="flex gap-3 md:gap-4 border-b border-[#ffffff1a] pb-0 mb-[35px] min-w-max">
+      {/* Tabs - Wrapped layout for mobile */}
+      <div className="px-4 md:px-[57px]">
+        <div className="flex flex-wrap justify-center sm:justify-start gap-2 sm:gap-3 md:gap-4 border-b border-[#ffffff1a] pb-4 sm:pb-0 mb-[35px]">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`h-[54px] px-4 md:px-[34px] flex items-center justify-center rounded-xl border-2 border-solid [font-family:'Lato',Helvetica] font-black text-[#c1963f] text-xs text-center tracking-[1.20px] leading-[18px] whitespace-nowrap transition-colors cursor-pointer ${activeTab === tab.id ? "bg-[#c1963f1a] border-[#c1963f]" : "bg-transparent border-[#ffffff1a]"}`}
+              className={`h-[40px] sm:h-[54px] px-3 sm:px-4 md:px-[34px] flex items-center justify-center rounded-xl border-2 border-solid [font-family:'Lato',Helvetica] font-black text-[#c1963f] text-[10px] sm:text-xs text-center tracking-[1.20px] leading-[18px] whitespace-nowrap transition-colors cursor-pointer ${activeTab === tab.id ? "bg-[#c1963f1a] border-[#c1963f]" : "bg-transparent border-[#ffffff1a]"}`}
             >
               {tab.label}
             </button>
@@ -83,30 +81,20 @@ export const ProgramsOfferedSection = (): JSX.Element => {
         </div>
       </div>
 
-      {/* Program Cards */}
+      {/* Program Cards Unified Grid */}
       <div className="px-4 md:px-14">
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-[14px] md:gap-[22.5px]">
-          {row1.map((card) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-[14px] md:gap-[22.5px] auto-rows-fr">
+          {cards.map((card) => (
             <Card key={card.id} className="bg-white rounded-[22.5px] border-[0.94px] border-solid border-[#0d244b0d] shadow-[0px_9.38px_28.12px_-4.69px_#0000001a] overflow-hidden hover:shadow-[0px_12px_32px_-4px_#0000002a] transition-shadow cursor-pointer">
-              <CardContent className="p-0 flex flex-col items-center justify-center py-[31px] gap-3 h-[141px]">
+              <CardContent className="p-0 flex flex-col items-center justify-center py-[24px] sm:py-[31px] gap-2 sm:gap-3 h-full min-h-[130px]">
                 <img className={card.imgClass} alt={card.imgAlt} src={card.imgSrc} />
-                <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[12.2px] text-center tracking-[0] leading-[15.2px] whitespace-pre-line">{card.label}</div>
+                <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[11px] sm:text-[12.2px] text-center tracking-[0] leading-[14px] sm:leading-[15.2px] whitespace-pre-line">
+                  {card.label}
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
-        {row2.length > 0 && (
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-[14px] md:gap-[22.5px] mt-[22.5px]">
-            {row2.map((card) => (
-              <Card key={card.id} className="bg-white rounded-[22.5px] border-[0.94px] border-solid border-[#0d244b0d] shadow-[0px_9.38px_28.12px_-4.69px_#0000001a] overflow-hidden hover:shadow-[0px_12px_32px_-4px_#0000002a] transition-shadow cursor-pointer">
-                <CardContent className="p-0 flex flex-col items-center justify-center py-[31px] gap-3 h-[130px]">
-                  <img className={card.imgClass} alt={card.imgAlt} src={card.imgSrc} />
-                  <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[12.2px] text-center tracking-[0] leading-[15.2px] whitespace-pre-line">{card.label}</div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        )}
       </div>
     </section>
   );

@@ -30,10 +30,9 @@ export const ResearchHighlightsSection = (): JSX.Element => {
     <section className="w-full flex flex-col items-center py-10">
       {/* Section heading */}
       <div className="flex flex-col items-center mb-6">
-        <h2 className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[34.6px] text-center tracking-[1.75px] leading-[44.9px]">
-          HIGHLIGHTS OF OUR PURSUIT OF IMPACTFUL
-          <br />
-          RESEARCH &amp; GLOBAL EXCELLENCE
+        <h2 className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[13.5px] sm:text-[24px] md:text-[34.6px] text-center tracking-[0.5px] md:tracking-[1.75px] leading-[1.4] md:leading-[44.9px] flex flex-col items-center">
+          <span className="whitespace-nowrap">HIGHLIGHTS OF OUR PURSUIT OF IMPACTFUL</span>
+          <span className="whitespace-nowrap">RESEARCH &amp; GLOBAL EXCELLENCE</span>
         </h2>
         {/* Gold divider bar */}
         <div className="mt-4 w-24 h-2 bg-[#c1963f] rounded-full" />
@@ -43,10 +42,10 @@ export const ResearchHighlightsSection = (): JSX.Element => {
       <div className="flex flex-row flex-wrap justify-center gap-[25.1px] mt-4">
         {researchers.map((researcher, index) => (
           <div key={index} className="flex flex-col items-center gap-[16.7px]">
-            {/* Photo card */}
+            {/* Photo card natively rendered grayscale */}
             <div className="w-[170.5px] h-[227.33px] rounded-[16.7px] overflow-hidden shadow-[0px_10.44px_10.44px_-5.22px_#0000000a,0px_20.88px_26.1px_-5.22px_#0000001a]">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale contrast-125"
                 alt={researcher.name}
                 src={researcher.image}
               />

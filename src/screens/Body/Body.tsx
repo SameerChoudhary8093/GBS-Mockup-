@@ -14,7 +14,6 @@ import { ResearchHighlightsSection } from "./sections/ResearchHighlightsSection/
 import { ScholarshipInfoSection } from "./sections/ScholarshipInfoSection";
 import { StatsOverviewSection } from "./sections/StatsOverviewSection";
 import { StudentSuccessOverviewSection } from "./sections/StudentSuccessOverviewSection";
-import { StudentSuccessProfilesSection } from "./sections/StudentSuccessProfilesSection/StudentSuccessProfilesSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
 
 const topNavLinks = [
@@ -225,7 +224,6 @@ export const Body = (): JSX.Element => {
       <IndustryTestimonialsSection />
       <div id="student-success">
         <StudentSuccessOverviewSection />
-        <StudentSuccessProfilesSection />
       </div>
       <EducationExperienceSection />
       <EducationRevolutionSection />

@@ -14,12 +14,9 @@ export const CampusLifeGallerySection = (): JSX.Element => {
         </div>
 
         {/* Gallery Grid */}
-        <div
-          className="grid grid-cols-4 grid-rows-2 gap-[15px] w-full"
-          style={{ gridTemplateRows: "277px 277px" }}
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full auto-rows-[200px] md:auto-rows-[277px]">
           {/* Large image - spans 2 cols and 2 rows */}
-          <div className="row-span-2 col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
+          <div className="sm:row-span-2 sm:col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
             <img
               className="w-full h-full object-cover"
               alt="Campus life"
@@ -28,7 +25,7 @@ export const CampusLifeGallerySection = (): JSX.Element => {
           </div>
 
           {/* Top-right first image */}
-          <div className="row-span-1 col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
+          <div className="col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
             <img
               className="w-full h-full object-cover"
               alt="Campus life"
@@ -37,7 +34,7 @@ export const CampusLifeGallerySection = (): JSX.Element => {
           </div>
 
           {/* Top-right second image */}
-          <div className="row-span-1 col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
+          <div className="col-span-1 bg-slate-200 rounded-[15px] overflow-hidden">
             <img
               className="w-full h-full object-cover"
               alt="Campus life"
@@ -46,7 +43,7 @@ export const CampusLifeGallerySection = (): JSX.Element => {
           </div>
 
           {/* Bottom-right wide image - spans 2 cols */}
-          <div className="row-span-1 col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
+          <div className="sm:col-span-2 bg-slate-200 rounded-[15px] overflow-hidden">
             <img
               className="w-full h-full object-cover"
               alt="Campus life"
