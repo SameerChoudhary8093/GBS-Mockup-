@@ -87,9 +87,15 @@ export const HeroBannerSection = (): JSX.Element => {
 
   return (
     <section className="relative w-full overflow-hidden" style={{ minHeight: "821px" }}>
-      {/* Background */}
-      <div className="absolute inset-0 w-full h-full bg-cover bg-center" style={{ backgroundImage: "url(https://c.animaapp.com/mn0n10j9vDypoz/img/sgvu-campus.png)" }}>
-        <div className="w-full h-full bg-[linear-gradient(180deg,rgba(13,36,75,0.9)_0%,rgba(26,69,155,0.9)_100%)]" />
+      {/* Background Video */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
+        <iframe
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.77vh] h-[56.25vw] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+          src="https://www.youtube.com/embed/FP3FmhI5G7E?autoplay=1&mute=1&loop=1&playlist=FP3FmhI5G7E&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1&vq=hd1080"
+          allow="autoplay; encrypted-media"
+          frameBorder="0"
+          style={{ border: 'none' }}
+        ></iframe>
       </div>
 
       {/* Main content */}
@@ -105,43 +111,50 @@ export const HeroBannerSection = (): JSX.Element => {
             </h1>
           </div>
 
-          {/* Merged Hero Card (Ishan Mathur + 1.8 Crore) */}
-          <div className="mb-[24px] z-20">
-            <div className="w-[190px] md:w-[220px] bg-white rounded-2xl overflow-hidden border-[1px] border-solid border-gray-100 shadow-[0px_10px_20px_rgba(0,0,0,0.15)] flex flex-col shrink-0 transform sm:-rotate-2 hover:rotate-0 transition-transform duration-300">
-              {/* Profile Top */}
-              <div className="relative w-full h-[155px] bg-gray-200 flex-shrink-0 pointer-events-none overflow-hidden">
-                <img src="https://c.animaapp.com/mn0n10j9vDypoz/img/ishan-mathur-1.png" alt="Ishan Mathur" className="absolute top-0 left-0 w-full h-full object-cover object-top" />
-                <div className="absolute top-2.5 right-2.5 px-2 py-1 bg-[#0d244b] rounded-full flex items-center justify-center shadow-md border border-white/20">
-                  <span className="[font-family:'Lato',Helvetica] font-bold text-white text-[9px] tracking-[0] whitespace-nowrap">Batch 2018-22</span>
-                </div>
+          {/* Mockup-style Cards (1.8 Crore + Ishan Mathur) */}
+          <div className="mb-[32px] flex flex-col sm:flex-row items-center sm:items-end gap-6 z-20">
+            {/* ₹1.8 Crore Glass Card */}
+            <div className="relative w-[300px] md:w-[380px] h-[130px] rounded-[15px] overflow-hidden border border-white/20 bg-white/10 backdrop-blur-md shadow-2xl flex flex-col items-center justify-center">
+              <div className="[font-family:'Lato',Helvetica] font-black text-white text-[38px] md:text-[52px] leading-none mb-1">
+                ₹1.8 <span className="text-[20px] md:text-[28px]">CRORE</span>
+              </div>
+              <div className="[font-family:'Lato',Helvetica] font-black text-white/80 text-[10px] md:text-[12px] tracking-[3px] md:tracking-[5px] uppercase">
+                INTERNATIONAL PLACEMENT
+              </div>
+            </div>
+
+            {/* Ishan Mathur Profile Card */}
+            <div className="w-[200px] md:w-[240px] bg-white rounded-[20px] overflow-hidden shadow-[0px_20px_40px_rgba(0,0,0,0.3)] flex flex-col shrink-0 sm:-rotate-2 hover:rotate-0 transition-transform duration-300 cursor-pointer">
+              {/* Photo (No Batch Label) */}
+              <div className="relative w-full h-[160px] md:h-[190px] bg-slate-100 overflow-hidden">
+                <img 
+                  src="https://c.animaapp.com/mn0n10j9vDypoz/img/ishan-mathur-1.png" 
+                  alt="Ishan Mathur" 
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
               
-              {/* Details + 1.8 Crore Ribbon */}
-              <div className="flex flex-col px-4 pt-3 pb-4 flex-1 pointer-events-none bg-white">
-                <div className="flex items-center justify-center w-full mb-1">
-                  <span className="[font-family:'Lato',Helvetica] font-bold text-[#c1963f] text-[10px] text-center tracking-[1.01px] leading-none whitespace-nowrap">B.TECH CSE</span>
+              {/* Content */}
+              <div className="flex flex-col px-5 py-4 bg-white text-center">
+                <div className="[font-family:'Lato',Helvetica] font-bold text-[#c1963f] text-[10px] md:text-[12px] tracking-[1px] mb-1 uppercase">
+                  B.TECH CSE
                 </div>
-                <div className="flex items-center justify-center w-full mb-2.5">
-                  <span className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[16px] text-center tracking-[0] leading-none whitespace-nowrap">Ishan Mathur</span>
+                <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[18px] md:text-[22px] leading-tight mb-3">
+                  Ishan Mathur
                 </div>
-                <div className="flex flex-col items-center justify-center bg-gray-50 rounded-lg border border-solid border-gray-100 h-[45px] py-1 mb-3">
-                  <span className="[font-family:'Lato',Helvetica] font-bold text-gray-400 text-[9px] text-center tracking-[0] leading-none whitespace-nowrap mb-1">PLACED AT</span>
-                  <span className="[font-family:'Lato',Helvetica] font-bold text-[#1a459b] text-[12px] text-center tracking-[0] leading-none whitespace-nowrap flex items-center">WALMART (USA)</span>
-                </div>
-                
-                {/* 1.8 Crore Integrated Banner */}
-                <div className="relative w-full overflow-hidden bg-[linear-gradient(154deg,rgba(13,36,75,1)_0%,rgba(26,69,155,1)_100%)] rounded-[8px] border border-solid border-[#ffffff33] py-2 flex flex-col items-center justify-center shadow-inner">
-                  <span className="[font-family:'Lato',Helvetica] font-black text-white text-[24px] leading-none whitespace-nowrap mb-1 drop-shadow-md">₹1.8 CRORE</span>
-                  <span className="[font-family:'Lato',Helvetica] font-black text-[#c1963f] text-[9px] tracking-[1px] leading-none whitespace-nowrap text-center">INTERNATIONAL<br/>PLACEMENT</span>
+                <div className="bg-slate-50 rounded-xl border border-slate-100 py-2.5 px-2">
+                  <div className="[font-family:'Lato',Helvetica] font-bold text-slate-400 text-[9px] mb-0.5 uppercase tracking-wider">PLACED AT</div>
+                  <div className="[font-family:'Lato',Helvetica] font-bold text-[#1a459b] text-[13px] md:text-[15px] whitespace-nowrap">
+                    WALMART (USA)
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Placement text */}
           <div className="mb-[24px]">
-            <p className="[font-family:'Lato',Helvetica] font-normal text-transparent text-[16px] md:text-[19.6px] tracking-[0] leading-[19.6px]">
-              <span className="font-bold text-slate-100 leading-[27.5px]"> Empowering 2000+ SGVU students with successful placements in leading companies worldwide. </span>
+            <p className="[font-family:'Lato',Helvetica] font-normal text-transparent text-[16px] md:text-[20px] tracking-[0] leading-tight">
+              <span className="font-black text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"> Empowering <span className="text-[#c1963f]">2000+ SGVU students</span> with <span className="text-[#c1963f]">successful placements</span> in leading companies worldwide. </span>
             </p>
           </div>
 

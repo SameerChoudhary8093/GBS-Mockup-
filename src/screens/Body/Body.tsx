@@ -16,12 +16,6 @@ import { StatsOverviewSection } from "./sections/StatsOverviewSection";
 import { StudentSuccessOverviewSection } from "./sections/StudentSuccessOverviewSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
 
-const topNavLinks = [
-  { label: "Alumni", href: "https://www.gyanvihar.org/alumni/" },
-  { label: "Research", href: "https://www.gyanvihar.org/research" },
-  { label: "Placements", href: "https://www.gyanvihar.org/placements/" },
-];
-
 const mainNavItems = [
   { label: "ADMISSIONS", href: "#hero" },
   { label: "PROGRAMS", href: "#programs" },
@@ -88,22 +82,9 @@ export const Body = (): JSX.Element => {
             </a>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          {topNavLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="[font-family:'Lato',Helvetica] font-normal text-white text-[11px] tracking-[0] leading-[16.5px] whitespace-nowrap cursor-pointer hover:underline bg-transparent border-0 p-0 no-underline"
-            >
-              {link.label}
-            </a>
-          ))}
-          <div className="flex items-center gap-1 bg-[#ffffff1a] rounded-sm border border-white/20 px-2 py-0.5 cursor-pointer">
-            <img className="w-5 h-5" alt="Language" src="https://c.animaapp.com/mn0n10j9vDypoz/img/container-13.svg" />
-            <span className="[font-family:'Lato',Helvetica] font-normal text-white text-[11px] tracking-[0] leading-[16.5px] whitespace-nowrap">English</span>
-          </div>
+        <div className="flex items-center gap-1 bg-[#ffffff1a] rounded-sm border border-white/20 px-2 py-0.5 cursor-pointer">
+          <img className="w-5 h-5" alt="Language" src="https://c.animaapp.com/mn0n10j9vDypoz/img/container-13.svg" />
+          <span className="[font-family:'Lato',Helvetica] font-normal text-white text-[11px] tracking-[0] leading-[16.5px] whitespace-nowrap">English</span>
         </div>
       </div>
 
@@ -181,21 +162,6 @@ export const Body = (): JSX.Element => {
                 </button>
               );
             })}
-          </div>
-
-          {/* Mobile utility links */}
-          <div className="flex flex-wrap gap-3 mt-6 pt-4 border-t border-slate-100">
-            {topNavLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="[font-family:'Lato',Helvetica] font-normal text-slate-500 text-[13px] bg-transparent border-0 cursor-pointer hover:text-[#0d244b] no-underline"
-              >
-                {link.label}
-              </a>
-            ))}
           </div>
 
           {/* Mobile contact info */}
