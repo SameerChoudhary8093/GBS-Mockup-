@@ -1,5 +1,6 @@
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import imgRevolution from "../../../../assets/image.jpeg";
 
 const features = [
   {
@@ -56,7 +57,7 @@ export const EducationRevolutionSection = (): JSX.Element => {
 
           {/* Right image */}
           <div className="w-full md:w-[40%] lg:w-[45%] flex-shrink-0 relative bg-[#0d244b] overflow-hidden min-h-[300px] md:min-h-full">
-            <div className="absolute inset-0 shadow-inner" style={{ background: "url(https://c.animaapp.com/mn0n10j9vDypoz/img/image-2.png) center / cover no-repeat" }} />
+            <img className="absolute inset-0 w-full h-full object-cover shadow-inner" src={imgRevolution} alt="EDU Revolution" />
             <div className="absolute inset-0 bg-gradient-to-t md:bg-[linear-gradient(270deg,rgba(13,36,75,1)_0%,rgba(13,36,75,0)_50%,rgba(13,36,75,0)_100%)] from-[#0d244b] via-transparent to-transparent md:from-transparent" />
           </div>
         </CardContent>
