@@ -5,7 +5,7 @@ const featureCards = [
   { number: "01", title: "AI-POWERED LEARNING\nECOSYSTEM" },
   { number: "02", title: "WORLD-CLASS\nINFRASTRUCTURE &\nSMART CLASSROOMS" },
   { number: "03", title: "150+ SKILLS LABS &\nINNOVATION STUDIOS" },
-  { number: "04", title: "30,000+ STUDENTS FROM\n50+ COUNTRIES" },
+  { number: "04", title: "40,000+ ALUMNI\nNETWORK" },
   { number: "05", title: "START-UP INCUBATION &\nENTREPRENEURSHIP" },
   { number: "06", title: "VIBRANT RESIDENTIAL\nCAMPUS LIFE" },
 ];
@@ -56,7 +56,7 @@ export const EducationExperienceSection = (): JSX.Element => {
           <div className="relative w-full h-[310px] bg-slate-900 rounded-3xl overflow-hidden shadow-[0px_10px_10px_-5px_#0000000a,0px_20px_25px_-5px_#0000001a,0px_0px_0px_8px_#0d244b0d] group">
             <iframe
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/eIUeP6-_sBw?rel=0&showinfo=0"
+              src="https://www.youtube.com/embed/FP3FmhI5G7E?rel=0&showinfo=0"
               title="SGVU Campus Tour"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

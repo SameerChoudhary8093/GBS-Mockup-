@@ -1,10 +1,10 @@
 import { Button } from "../../../../components/ui/button";
 
 const quickLinks = [
-  { label: "Admission Procedure", href: "https://sgvu.edu.in/admission-procedure" },
-  { label: "Course Fee Structure", href: "https://www.gyanvihar.org/fees-structure" },
-  { label: "Scholarship Details", href: "https://www.gyanvihar.org/wp-content/uploads/attach/sgvu-scholarships.pdf" },
-  { label: "Placements Cell", href: "https://www.gyanvihar.org/placement" },
+  { label: "Admission", href: "https://sgvu.edu.in/admission-procedure" },
+  { label: "Program Fee", href: "https://www.gyanvihar.org/fees-structure" },
+  { label: "Scholarship", href: "https://www.gyanvihar.org/wp-content/uploads/attach/sgvu-scholarships.pdf" },
+  { label: "Placements", href: "https://www.gyanvihar.org/placement" },
   { label: "Anti-Ragging Policy", href: "https://www.gyanvihar.org/uploads/Anti_Ragging_Committee_Squad_and_Monitoring_Cell_2024_7b5e021e97.pdf" },
 ];
 
@@ -54,7 +54,7 @@ export const FooterSection = (): JSX.Element => {
               <div className="w-full h-full [background:url(https://c.animaapp.com/mn0n10j9vDypoz/img/container-1.png)_50%_50%_/_cover] brightness-0 invert" />
             </div>
             <p className="[font-family:'Lato',Helvetica] font-normal text-slate-400 text-[13.5px] tracking-[0] leading-[21.9px] mb-[22px]">
-              Suresh Gyan Vihar University is a self-financed state university located in Jaipur, Rajasthan, India. In 2017, the university became the first private university in Rajasthan to be awarded an &#39;A&#39; grade by NAAC.
+              Suresh Gyan Vihar University is a self-financed state university located in Jaipur, Rajasthan, India. In 2017, the university became the first private university in Rajasthan to be awarded an A+ grade by NAAC.
             </p>
             <div className="flex items-center gap-3 mt-1">
               {socialIcons.map((icon) => (

@@ -1,3 +1,5 @@
+import imgNirf from "../../../../assets/naacXnirf.png";
+
 // Ranking data for the four subject-specific rankings
 const rankingItems = [
   { rank: "13th", subject: "PHARMACY" },
@@ -16,13 +18,13 @@ export const RankingsInfoSection = (): JSX.Element => {
           <div className="flex flex-col items-center relative w-[154px] shrink-0">
             <div className="relative flex items-center justify-center overflow-visible">
               <img
-                className="w-[215px] h-[68px] object-contain"
-                alt="Asset"
-                src="https://c.animaapp.com/mn0n10j9vDypoz/img/asset-5-4x-1.png"
+                className="w-full h-auto max-h-[100px] object-contain"
+                alt="NAAC & NIRF Logo"
+                src={imgNirf}
               />
             </div>
             <div className="mt-1 flex items-center justify-center [font-family:'Lato',Helvetica] font-black text-slate-500 text-[12.8px] text-center tracking-[1.28px] leading-[19.2px] whitespace-nowrap">
-              NIRF RANKINGS 2026
+              NIRF RANKINGS 2025
             </div>
           </div>
 

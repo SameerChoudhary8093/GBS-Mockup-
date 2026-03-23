@@ -1,22 +1,32 @@
 import { useState } from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import imgDarshna from "../../../../assets/Darshna_Sinha.png";
 
 const studentProfiles = [
   {
     left: "left-0",
-    bgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ab6axub1-otdpcpkdqu4d9-xr-fguglqey4fctzb7qihtghlq99ardpkqetkhnbc.png",
-    imgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ishan-mathur-1.png",
-  },
-  {
-    left: "left-[63px]",
     bgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ab6axudcgs5gacfjephqd0hkobr5rwljixcwqtkipdp1qcjfoxcucncpeq38fgpc.png",
     imgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/shobhit-poddar-1.png",
+    stat: "40 LPA",
   },
   {
-    left: "left-[126px]",
+    left: "left-[60px]",
     bgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ab6axubd3ub7pqlysrlah0zsgoeptycl1lw9rfyxv-t-bslwymi74sdsppfo-pwo.png",
     imgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/srijan-sah-1.png",
+    stat: "20 LPA",
+  },
+  {
+    left: "left-[120px]",
+    bgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ab6axubd3ub7pqlysrlah0zsgoeptycl1lw9rfyxv-t-bslwymi74sdsppfo-pwo.png",
+    imgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/kavya-sinsinwar.png",
+    stat: "16 LPA",
+  },
+  {
+    left: "left-[180px]",
+    bgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ab6axudcgs5gacfjephqd0hkobr5rwljixcwqtkipdp1qcjfoxcucncpeq38fgpc.png",
+    imgUrl: imgDarshna,
+    stat: "14 LPA",
   },
 ];
 
@@ -84,70 +94,73 @@ export const HeroBannerSection = (): JSX.Element => {
       {/* Main content */}
       <div className="relative w-full flex flex-col lg:flex-row items-center lg:items-start px-4 md:px-10 py-8 md:py-[39px] gap-8">
         {/* Left: Hero text */}
-        <div className="flex flex-col flex-1 min-w-0 pt-8 md:pt-[174px]">
+        <div className="flex flex-col flex-1 min-w-0 pt-4 md:pt-4">
           <div className="mb-[35px]">
             <h1 className="[font-family:'Lato',Helvetica] font-normal text-transparent text-[32px] md:text-[47.1px] tracking-[0] leading-tight md:leading-[47.1px]" style={{ textShadow: "0px 3.93px 2.95px #00000012, 0px 1.96px 1.96px #0000000f" }}>
-              <span className="font-black text-white">SGVU's Final-Year students<br />getting </span>
-              <span className="font-black text-[#c1963f] underline">Highest Package</span>
+              <span className="font-black text-white">We Give </span>
+              <span className="font-black text-[#c1963f]">Wings </span>
+              <span className="font-black text-white">to </span>
+              <span className="font-bold italic text-[#c1963f]" style={{ fontFamily: "'Playfair Display', serif" }}>your Dreams!</span>
             </h1>
           </div>
 
-          {/* ₹1.8 Crore stat card */}
-          <div className="mb-[17px]">
-            <div className="relative w-[222px] h-[99px] bg-[#ffffff1a] rounded-[7.86px] border-[0.98px] border-solid border-[#ffffff33] backdrop-blur-[1.96px]">
-              <div className="absolute inset-0 bg-[#ffffff01] rounded-[7.86px] shadow-[0px_7.86px_9.82px_-5.89px_#0000001a,0px_19.64px_24.55px_-4.91px_#0000001a]" />
-              <div className="absolute top-[17px] left-[17px] flex items-baseline gap-[2.8px]">
-                <span className="[font-family:'Lato',Helvetica] font-black text-white text-[47.1px] leading-[47.1px] whitespace-nowrap">₹1.8</span>
-                <span className="[font-family:'Lato',Helvetica] font-black text-white text-[19.6px] leading-[27.5px] whitespace-nowrap mt-[19px]">CRORE</span>
+          {/* Merged Hero Card (Ishan Mathur + 1.8 Crore) */}
+          <div className="mb-[24px] z-20">
+            <div className="w-[190px] md:w-[220px] bg-white rounded-2xl overflow-hidden border-[1px] border-solid border-gray-100 shadow-[0px_10px_20px_rgba(0,0,0,0.15)] flex flex-col shrink-0 transform sm:-rotate-2 hover:rotate-0 transition-transform duration-300">
+              {/* Profile Top */}
+              <div className="relative w-full h-[155px] bg-gray-200 flex-shrink-0 pointer-events-none overflow-hidden">
+                <img src="https://c.animaapp.com/mn0n10j9vDypoz/img/ishan-mathur-1.png" alt="Ishan Mathur" className="absolute top-0 left-0 w-full h-full object-cover object-top" />
+                <div className="absolute top-2.5 right-2.5 px-2 py-1 bg-[#0d244b] rounded-full flex items-center justify-center shadow-md border border-white/20">
+                  <span className="[font-family:'Lato',Helvetica] font-bold text-white text-[9px] tracking-[0] whitespace-nowrap">Batch 2018-22</span>
+                </div>
               </div>
-              <div className="absolute top-[68px] left-[17px] [font-family:'Lato',Helvetica] font-black text-slate-300 text-[9.8px] tracking-[1.96px] leading-[14.7px] whitespace-nowrap">INTERNATIONAL PLACEMENT</div>
+              
+              {/* Details + 1.8 Crore Ribbon */}
+              <div className="flex flex-col px-4 pt-3 pb-4 flex-1 pointer-events-none bg-white">
+                <div className="flex items-center justify-center w-full mb-1">
+                  <span className="[font-family:'Lato',Helvetica] font-bold text-[#c1963f] text-[10px] text-center tracking-[1.01px] leading-none whitespace-nowrap">B.TECH CSE</span>
+                </div>
+                <div className="flex items-center justify-center w-full mb-2.5">
+                  <span className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[16px] text-center tracking-[0] leading-none whitespace-nowrap">Ishan Mathur</span>
+                </div>
+                <div className="flex flex-col items-center justify-center bg-gray-50 rounded-lg border border-solid border-gray-100 h-[45px] py-1 mb-3">
+                  <span className="[font-family:'Lato',Helvetica] font-bold text-gray-400 text-[9px] text-center tracking-[0] leading-none whitespace-nowrap mb-1">PLACED AT</span>
+                  <span className="[font-family:'Lato',Helvetica] font-bold text-[#1a459b] text-[12px] text-center tracking-[0] leading-none whitespace-nowrap flex items-center">WALMART (USA)</span>
+                </div>
+                
+                {/* 1.8 Crore Integrated Banner */}
+                <div className="relative w-full overflow-hidden bg-[linear-gradient(154deg,rgba(13,36,75,1)_0%,rgba(26,69,155,1)_100%)] rounded-[8px] border border-solid border-[#ffffff33] py-2 flex flex-col items-center justify-center shadow-inner">
+                  <span className="[font-family:'Lato',Helvetica] font-black text-white text-[24px] leading-none whitespace-nowrap mb-1 drop-shadow-md">₹1.8 CRORE</span>
+                  <span className="[font-family:'Lato',Helvetica] font-black text-[#c1963f] text-[9px] tracking-[1px] leading-none whitespace-nowrap text-center">INTERNATIONAL<br/>PLACEMENT</span>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Placement text */}
           <div className="mb-[24px]">
             <p className="[font-family:'Lato',Helvetica] font-normal text-transparent text-[16px] md:text-[19.6px] tracking-[0] leading-[19.6px]">
-              <span className="font-bold text-slate-100 leading-[27.5px]">2000+ SGVU students selected at packages of </span>
-              <span className="font-bold text-[#c1963f]">₹10 Lakh - ₹1.8 Crore*</span>
+              <span className="font-bold text-slate-100 leading-[27.5px]"> Empowering 2000+ SGVU students with successful placements in leading companies worldwide. </span>
             </p>
           </div>
 
           {/* Student profiles */}
           <div className="relative mt-2 flex items-center h-[110px] sm:h-[120px]">
-            <div className="flex relative z-10 w-[240px] h-full items-start pt-[10px]">
-              {/* Profile 1 */}
-              <div className="flex flex-col items-center absolute left-0 z-30 group">
-                <div className="w-[84px] h-[84px] rounded-full overflow-hidden border-[3px] border-solid border-[#c1963f] shadow-lg flex items-center justify-center">
-                  <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[0].bgUrl}) 50% 50% / cover` }}>
-                    <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[0].imgUrl}) 50% 50% / cover` }} />
+            <div className="flex relative z-10 w-[300px] h-full items-start pt-[10px]">
+              {studentProfiles.map((profile, i) => (
+                <div key={i} className={`flex flex-col items-center absolute ${profile.left} z-${30 - i * 10} group`}>
+                  <div className="w-[84px] h-[84px] rounded-full overflow-hidden border-[3px] border-solid border-[#c1963f] shadow-lg flex items-center justify-center">
+                    <div className="w-full h-full rounded-full" style={{ background: `url(${profile.bgUrl}) 50% 50% / cover` }}>
+                      <div className="w-full h-full rounded-full" style={{ background: `url(${profile.imgUrl}) 50% 50% / cover` }} />
+                    </div>
                   </div>
+                  <div className="mt-2 [font-family:'Lato',Helvetica] font-black text-white text-[14px] leading-none whitespace-nowrap drop-shadow-md">{profile.stat}</div>
                 </div>
-                <div className="mt-2 [font-family:'Lato',Helvetica] font-black text-[#c1963f] text-[14px] leading-none whitespace-nowrap drop-shadow-md">1.8 CR</div>
-              </div>
-
-              {/* Profile 2 */}
-              <div className="flex flex-col items-center absolute left-[66px] z-20 group">
-                <div className="w-[84px] h-[84px] rounded-full overflow-hidden border-[3px] border-solid border-[#c1963f] shadow-lg flex items-center justify-center">
-                  <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[1].bgUrl}) 50% 50% / cover` }}>
-                    <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[1].imgUrl}) 50% 50% / cover` }} />
-                  </div>
-                </div>
-                <div className="mt-2 [font-family:'Lato',Helvetica] font-black text-white text-[14px] leading-none whitespace-nowrap drop-shadow-md">40 LPA</div>
-              </div>
-
-              {/* Profile 3 */}
-              <div className="flex flex-col items-center absolute left-[132px] z-10 group">
-                <div className="w-[84px] h-[84px] rounded-full overflow-hidden border-[3px] border-solid border-[#c1963f] shadow-lg flex items-center justify-center">
-                  <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[2].bgUrl}) 50% 50% / cover` }}>
-                    <div className="w-full h-full rounded-full" style={{ background: `url(${studentProfiles[2].imgUrl}) 50% 50% / cover` }} />
-                  </div>
-                </div>
-                <div className="mt-2 [font-family:'Lato',Helvetica] font-black text-white text-[14px] leading-none whitespace-nowrap drop-shadow-md">20 LPA</div>
-              </div>
+              ))}
             </div>
 
             {/* JOIN THEM TODAY Pill */}
-            <div className="absolute left-[180px] top-[26px] z-0 h-[52px] w-[140px] pl-[40px] pr-4 flex justify-start items-center bg-[linear-gradient(90deg,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0.1)_100%)] border-[1.5px] border-[#c1963f] rounded-r-full backdrop-blur-[6px] shadow-lg">
+            <div className="absolute left-[242px] top-[26px] z-0 h-[52px] w-[140px] pl-[44px] pr-4 flex justify-start items-center bg-[linear-gradient(90deg,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0.1)_100%)] border-[1.5px] border-[#c1963f] rounded-r-full backdrop-blur-[6px] shadow-lg">
               <span className="[font-family:'Lato',Helvetica] font-extrabold text-white text-[14.5px] leading-[1.1] text-left whitespace-pre-line tracking-tight drop-shadow-md">JOIN THEM<br />TODAY</span>
             </div>
           </div>
