@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 import imgDarshna from "../../../../assets/Darshna_Sinha.png";
+import imgSonali from "../../../../assets/Sonali_Mathur.png";
 
 const studentProfiles = [
   {
@@ -18,15 +19,15 @@ const studentProfiles = [
   },
   {
     left: "left-[120px]",
-    bgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ab6axubd3ub7pqlysrlah0zsgoeptycl1lw9rfyxv-t-bslwymi74sdsppfo-pwo.png",
-    imgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/kavya-sinsinwar.png",
-    stat: "16 LPA",
-  },
-  {
-    left: "left-[180px]",
     bgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ab6axudcgs5gacfjephqd0hkobr5rwljixcwqtkipdp1qcjfoxcucncpeq38fgpc.png",
     imgUrl: imgDarshna,
     stat: "14 LPA",
+  },
+  {
+    left: "left-[180px]",
+    bgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ab6axubd3ub7pqlysrlah0zsgoeptycl1lw9rfyxv-t-bslwymi74sdsppfo-pwo.png",
+    imgUrl: imgSonali,
+    stat: "10 LPA",
   },
 ];
 
@@ -94,7 +95,7 @@ export const HeroBannerSection = (): JSX.Element => {
       {/* Main content */}
       <div className="relative w-full flex flex-col lg:flex-row items-center lg:items-start px-4 md:px-10 py-8 md:py-[39px] gap-8">
         {/* Left: Hero text */}
-        <div className="flex flex-col flex-1 min-w-0 pt-4 md:pt-4">
+        <div className="flex flex-col flex-1 min-w-0 pt-0 md:pt-0">
           <div className="mb-[35px]">
             <h1 className="[font-family:'Lato',Helvetica] font-normal text-transparent text-[32px] md:text-[47.1px] tracking-[0] leading-tight md:leading-[47.1px]" style={{ textShadow: "0px 3.93px 2.95px #00000012, 0px 1.96px 1.96px #0000000f" }}>
               <span className="font-black text-white">We Give </span>
