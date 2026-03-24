@@ -1,11 +1,11 @@
 import imgNirf from "../../../../assets/naacXnirf.png";
 
-// Ranking data for the four subject-specific rankings
+// Ranking data for the updated rankings
 const rankingItems = [
-  { rank: "13th", subject: "PHARMACY" },
-  { rank: "17th", subject: "AGRICULTURE" },
-  { rank: "24th", subject: "ARCHITECTURE" },
-  { rank: "26th", subject: "LAW" },
+  { rank: "101-150", subject: "University NIRF Rank" },
+  { rank: "151-200", subject: "Overall Rank Band" },
+  { rank: "11-50", subject: "Sustainable Development Goals" },
+  { rank: "39", subject: "Pharmacy" },
 ];
 
 export const RankingsInfoSection = (): JSX.Element => {
