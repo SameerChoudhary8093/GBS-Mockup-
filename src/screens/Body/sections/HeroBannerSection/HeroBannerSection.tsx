@@ -116,10 +116,10 @@ export const HeroBannerSection = (): JSX.Element => {
           <div className="mb-[32px] flex flex-col sm:flex-row items-center sm:items-end gap-6 z-20">
             {/* ₹1.8 Crore Glass Card */}
             <div className="relative w-[300px] md:w-[380px] h-[130px] rounded-[15px] overflow-hidden border border-white/20 bg-white/10 backdrop-blur-md shadow-2xl flex flex-col items-center justify-center">
-              <div className="[font-family:'Lato',Helvetica] font-black text-white text-[38px] md:text-[52px] leading-none mb-1">
+              <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[38px] md:text-[52px] leading-none mb-1">
                 ₹1.8 <span className="text-[20px] md:text-[28px]">CRORE</span>
               </div>
-              <div className="[font-family:'Lato',Helvetica] font-black text-white/80 text-[10px] md:text-[12px] tracking-[3px] md:tracking-[5px] uppercase">
+              <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[10px] md:text-[12px] tracking-[3px] md:tracking-[5px] uppercase">
                 INTERNATIONAL PLACEMENT
               </div>
             </div>
