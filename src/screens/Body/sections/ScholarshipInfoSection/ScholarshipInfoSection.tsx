@@ -7,7 +7,7 @@ export const ScholarshipInfoSection = (): JSX.Element => {
   };
 
   const handleBrochure = () => {
-    window.open("https://limegreen-chinchilla-422071.hostingersite.com/wp-content/uploads/2026/03/fee-structure-with-engineering.pdf", "_blank");
+    window.open("https://drive.google.com/file/d/1rcCoCYW_YL2nIPjYLdz7NylXbzkcs0Dm/view?usp=drive_link", "_blank");
   };
 
   return (

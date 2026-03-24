@@ -91,10 +91,11 @@ export const HeroBannerSection = (): JSX.Element => {
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
         <iframe
           className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.77vh] h-[56.25vw] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-          src="https://www.youtube.com/embed/FP3FmhI5G7E?autoplay=1&mute=1&loop=1&playlist=FP3FmhI5G7E&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1&vq=hd1080"
-          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/FP3FmhI5G7E?autoplay=1&mute=1&loop=1&playlist=FP3FmhI5G7E&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1&vq=hd1080&autoplay=1&mute=1"
+          allow="autoplay; encrypted-media; accelerometer; gyroscope; picture-in-picture"
           frameBorder="0"
-          style={{ border: 'none' }}
+          style={{ border: 'none', filter: 'brightness(1.1) contrast(1.1)' }}
+          loading="eager"
         ></iframe>
       </div>
 
@@ -154,7 +155,7 @@ export const HeroBannerSection = (): JSX.Element => {
 
           <div className="mb-[24px]">
             <p className="[font-family:'Lato',Helvetica] font-normal text-transparent text-[16px] md:text-[20px] tracking-[0] leading-tight">
-              <span className="font-black text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"> Empowering <span className="text-[#c1963f]">2000+ SGVU students</span> with <span className="text-[#c1963f]">successful placements</span> in leading companies worldwide. </span>
+              <span className="font-black text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"> Empowering <span className="text-[#c1963f]">2000+ SGVU students</span> with <span className="text-[#c1963f]">recent successful placements</span> in leading companies worldwide. </span>
             </p>
           </div>
 

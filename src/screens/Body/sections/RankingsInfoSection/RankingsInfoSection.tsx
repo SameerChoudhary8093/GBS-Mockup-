@@ -28,32 +28,7 @@ export const RankingsInfoSection = (): JSX.Element => {
             </div>
           </div>
 
-          {/* Rank #1 Card */}
-          <div className="shrink-0 w-full max-w-[356px] h-[106px] relative rounded-2xl border border-solid border-[#0d244b1a] bg-[linear-gradient(179deg,rgba(255,157,0,0.51)_0%,rgba(255,255,255,0.51)_52%,rgba(17,255,0,0.51)_100%),linear-gradient(0deg,rgba(13,36,75,0.05)_0%,rgba(13,36,75,0.05)_100%)] mx-auto lg:mx-0">
-            {/* RANK NO. label */}
-            <div className="absolute top-[43px] left-[31px] flex">
-              <div className="[font-family:'Lato',Helvetica] font-black text-[#c1963f] text-[19.8px] text-center tracking-[-0.99px] leading-[23.8px]">
-                RANK
-                <br />
-                NO.
-              </div>
-            </div>
-
-            {/* Big number 1 */}
-            <div className="absolute top-2.5 left-[83px] flex items-center justify-center w-[122px] h-[86px]">
-              <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[85.7px] text-center tracking-[0] leading-[85.7px]">
-                1
-              </div>
-            </div>
-
-            {/* Description text */}
-            <div className="absolute top-[41px] left-[186px] [font-family:'Lato',Helvetica] font-black text-[#0d244b] text-[11.9px] tracking-[0] leading-[14.9px]">
-              PRIVATE UNIVERSITY
-              <br />
-              IN RAJASTHAN BY NAAC
-            </div>
-          </div>
-
+          
           {/* Subject-specific rankings grid */}
           <div className="lg:pl-10 lg:border-l border-slate-100 grid grid-cols-2 md:grid-cols-4 gap-6 shrink-0 w-full md:w-auto mt-4 lg:mt-0">
             {rankingItems.map((item) => (
