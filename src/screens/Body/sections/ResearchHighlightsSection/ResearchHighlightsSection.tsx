@@ -1,6 +1,7 @@
 import imgNeha from "../../../../assets/NEHA.png";
 import imgAnkur from "../../../../assets/ANKUR.png";
 import imgSarmad from "../../../../assets/SARMAD.png";
+import imgGaurav from "../../../../assets/Gaurav.png";
 
 const researchers = [
   {
@@ -22,6 +23,10 @@ const researchers = [
   {
     name: "DR. KISHAN KUMAR",
     image: "https://c.animaapp.com/mn0n10j9vDypoz/img/image-18.png",
+  },
+  {
+    name: "DR. GAURAV SHARMA",
+    image: imgGaurav,
   },
   {
     name: "KRITI SHRIVASTAV",
@@ -49,9 +54,10 @@ export const ResearchHighlightsSection = (): JSX.Element => {
             {/* Photo card natively rendered grayscale */}
             <div className="w-[170.5px] h-[227.33px] rounded-[16.7px] overflow-hidden shadow-[0px_10.44px_10.44px_-5.22px_#0000000a,0px_20.88px_26.1px_-5.22px_#0000001a]">
               <img
-                className="w-full h-full object-cover grayscale contrast-125 mix-blend-multiply"
+                className="w-full h-full object-top object-cover grayscale contrast-125 mix-blend-multiply"
                 alt={researcher.name}
                 src={researcher.image}
+                style={{ objectPosition: 'center 20%' }}
               />
             </div>
             {/* Name label */}

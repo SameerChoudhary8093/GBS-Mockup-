@@ -155,7 +155,7 @@ export const HeroBannerSection = (): JSX.Element => {
 
           <div className="mb-[24px]">
             <p className="[font-family:'Lato',Helvetica] font-normal text-transparent text-[16px] md:text-[20px] tracking-[0] leading-tight">
-              <span className="font-black text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"> Empowering <span className="text-[#c1963f]">2000+ SGVU students</span> with <span className="text-[#c1963f]">recent successful placements</span> in leading companies worldwide. </span>
+              <span className="font-black text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"> From campus to career, <span className="text-[#c1963f]">tens of thousands SGVU Students</span> already <span className="text-[#c1963f]">leading world</span>. </span>
             </p>
           </div>
 

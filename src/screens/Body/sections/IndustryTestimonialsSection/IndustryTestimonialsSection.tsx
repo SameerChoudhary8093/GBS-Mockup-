@@ -36,7 +36,7 @@ export const IndustryTestimonialsSection = (): JSX.Element => {
         {/* Section Title */}
         <div className="flex flex-col items-center mb-8 px-2">
           <h2 className="[font-family:'Lato',Helvetica] font-black text-[#0d244b] text-2xl md:text-3xl lg:text-[34px] tracking-[0] leading-tight text-center">
-            Our Premium Schools
+            Dream it, Learn it, Achieve it
           </h2>
           <p className="mt-3 [font-family:'Lato',Helvetica] font-bold text-[#c1963f] text-[15px] md:text-lg text-center tracking-[0] leading-snug max-w-[800px]">
             Excellence and virtue delivered through a pedagogy prepared by{" "}

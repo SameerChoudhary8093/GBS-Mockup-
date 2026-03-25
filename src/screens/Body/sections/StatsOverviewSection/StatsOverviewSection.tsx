@@ -6,7 +6,7 @@ const statsData = [
   { value: 1.8, suffix: " CR", label: "Highest Package", decimals: 1 },
   { value: 40, suffix: "K+", label: "Alumni Network", decimals: 0 },
   { value: 10, suffix: "K+", label: "Students", decimals: 0 },
-  { value: 125, suffix: "+", label: "Companies", decimals: 0 },
+  { value: 300, suffix: "+", label: "Companies", decimals: 0 },
 ];
 
 export const StatsOverviewSection = (): JSX.Element => {

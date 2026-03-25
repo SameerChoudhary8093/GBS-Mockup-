@@ -24,7 +24,7 @@ export const RankingsInfoSection = (): JSX.Element => {
               />
             </div>
             <div className="mt-1 flex items-center justify-center [font-family:'Lato',Helvetica] font-black text-slate-500 text-[12.8px] text-center tracking-[1.28px] leading-[19.2px] whitespace-nowrap">
-              NIRF RANKINGS 2025
+              
             </div>
           </div>
 
@@ -49,8 +49,13 @@ export const RankingsInfoSection = (): JSX.Element => {
 
         {/* Subtitle row */}
         <div className="flex justify-center w-full mt-4">
-          <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b99] text-[10px] md:text-xs text-center tracking-[2px] md:tracking-[3.60px] leading-[18px] w-full px-4">
-            AHEAD OF MANY STATE &amp; PRIVATE UNIVERSITIES IN THE REGION
+          <div className="text-center w-full px-4">
+            <div className="[font-family:'Lato',Helvetica] font-black text-slate-700 text-lg md:text-xl tracking-[1.28px] leading-[19.2px] whitespace-nowrap mb-2">
+              NIRF RANKINGS 2025
+            </div>
+            <div className="[font-family:'Lato',Helvetica] font-black text-[#0d244b99] text-[10px] md:text-xs text-center tracking-[2px] md:tracking-[3.60px] leading-[18px]">
+              AHEAD OF MANY STATE &amp; PRIVATE UNIVERSITIES IN THE REGION
+            </div>
           </div>
         </div>
       </div>
