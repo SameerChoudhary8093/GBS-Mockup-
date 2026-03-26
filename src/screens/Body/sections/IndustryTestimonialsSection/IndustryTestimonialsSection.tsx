@@ -48,12 +48,13 @@ export const IndustryTestimonialsSection = (): JSX.Element => {
         {/* School Images Row / Mobile Video Stack */}
         <div className="w-full pb-4 mt-8">
           {/* Changed to flex-col for all viewports as per instruction layout rules */}
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-8 w-full mx-auto max-w-[1000px]">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-6 w-full mx-auto">
             {[
               "GWbAZYC_B9s",
+              "FP3FmhI5G7E", // Placeholder ID: Middle video
               "FEyAlmvfwqE"
             ].map((videoId, index) => (
-              <div key={index} className="w-full lg:w-1/2 max-w-[500px] rounded-2xl overflow-hidden shadow-xl aspect-video relative bg-slate-900 border-4 border-white">
+              <div key={index} className="w-full lg:w-1/3 max-w-[500px] rounded-2xl overflow-hidden shadow-xl aspect-video relative bg-slate-900 border-4 border-white">
                  <iframe
                    className="absolute top-0 left-0 w-full h-full"
                    src={`https://www.youtube.com/embed/${videoId}?rel=0&showinfo=0`}
