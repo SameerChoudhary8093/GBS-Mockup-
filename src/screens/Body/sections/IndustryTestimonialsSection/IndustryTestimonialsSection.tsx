@@ -51,7 +51,7 @@ export const IndustryTestimonialsSection = (): JSX.Element => {
           <div className="flex flex-col lg:flex-row justify-center items-center gap-6 w-full mx-auto">
             {[
               "GWbAZYC_B9s",
-              "MLMfP4E2N3c", // Middle video updated
+              "J8qQDT20xnU", // Updated middle video with new link
               "FEyAlmvfwqE"
             ].map((videoId, index) => (
               <div key={index} className="w-full lg:w-1/3 max-w-[500px] rounded-2xl overflow-hidden shadow-xl aspect-video relative bg-slate-900 border-4 border-white">
