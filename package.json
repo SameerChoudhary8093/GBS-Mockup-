@@ -6,7 +6,7 @@
   "description": "A React project",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/meritto-fix.js"
+    "build": "vite build"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.1",
