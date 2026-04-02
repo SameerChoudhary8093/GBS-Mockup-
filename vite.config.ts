@@ -15,12 +15,11 @@ export default defineConfig(({ mode }) => ({
     cssCodeSplit: false,
     rollupOptions: {
       output: {
-        format: "iife", // IIFE is best for local file access as it doesn't use 'type=module'
+        format: "es", // ES modules for better deployment compatibility
         manualChunks: undefined,
         entryFileNames: `assets/[name].js`,
         chunkFileNames: `assets/[name].js`,
         assetFileNames: `assets/[name].[ext]`,
-        inlineDynamicImports: true, // Needed for IIFE with single entry
       },
     },
     chunkSizeWarningLimit: 2000,
