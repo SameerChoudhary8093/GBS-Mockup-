@@ -196,3 +196,17 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+/* Hide scrollbars in Meritto widget */
+.npf_wgts iframe, 
+.npf_wgts div,
+.npf_wgts {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.npf_wgts iframe::-webkit-scrollbar,
+.npf_wgts div::-webkit-scrollbar,
+.npf_wgts::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
