@@ -92,11 +92,13 @@ export const Body = (): JSX.Element => {
       <nav className="w-full h-16 md:h-20 bg-white shadow-[0px_2px_4px_-2px_#0000001a,0px_4px_6px_-1px_#0000001a] flex items-center px-4 md:px-10 sticky top-0 z-50">
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
-          <button
-            onClick={() => scrollToSection("#hero")}
+          <a
+            href="https://www.gyanvihar.org/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-[160px] md:w-[245px] h-[38px] md:h-[59px] flex-shrink-0 bg-transparent border-0 p-0 cursor-pointer"
             style={{ background: "url(https://c.animaapp.com/mn0n10j9vDypoz/img/container-1.png) 50% 50% / contain no-repeat" }}
-            aria-label="SGVU Home"
+            aria-label="SGVU Official Website"
           />
 
           {/* Desktop Nav links */}

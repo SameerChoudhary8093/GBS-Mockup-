@@ -5,6 +5,7 @@ import imgSonali from "../../../../assets/Sonali_Mathur.png";
 import imgAayush from "../../../../assets/aayush.jpg";
 
 const studentProfiles = [
+// ... (omitting for brevity in this thought, but I will provide the full block in the tool call)
   {
     left: "left-0",
     bgUrl: "https://c.animaapp.com/mn0n10j9vDypoz/img/ab6axudcgs5gacfjephqd0hkobr5rwljixcwqtkipdp1qcjfoxcucncpeq38fgpc.png",
@@ -39,31 +40,18 @@ const studentProfiles = [
 
 export const HeroBannerSection = (): JSX.Element => {
   useEffect(() => {
-    const loadScript = () => {
-      // Check if script already exists
-      const existingScript = document.querySelector('script[src*="emwgts.js"]');
-      if (existingScript) {
-        // If script exists, we might need to manually trigger it if the widget didn't load
-        // Many widgets from Meritto/NPF hook into the window object
-        if ((window as any).npfReady) {
-          (window as any).npfReady();
-        }
-        return;
+    const s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://widgets.in6.nopaperforms.com/emwgts.js";
+    document.body.appendChild(s);
+
+    return () => {
+      // Clean up script on unmount if needed
+      if (document.body.contains(s)) {
+        document.body.removeChild(s);
       }
-
-      const s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://widgets.in6.nopaperforms.com/emwgts.js";
-      s.onload = () => {
-        console.log("Meritto script loaded");
-      };
-      document.body.appendChild(s);
     };
-
-    // Small timeout to ensure React has painted the div
-    const timer = setTimeout(loadScript, 500);
-    return () => clearTimeout(timer);
   }, []);
 
   return (

@@ -1,4 +1,4 @@
-# GBS Mockup Project
+#Application Project
 
 ## Getting started
 

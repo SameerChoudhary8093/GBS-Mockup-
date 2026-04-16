@@ -1,4 +1,4 @@
-# GBS Mockup Project - Setup Instructions
+# Application Project - Setup Instructions
 
 ## Prerequisites
 - Node.js (version 16 or higher)
