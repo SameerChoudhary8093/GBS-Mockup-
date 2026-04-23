@@ -128,7 +128,10 @@ export const Body = (): JSX.Element => {
             >
               APPLY NOW
             </Button>
-            <Button className="h-auto px-6 py-2 bg-[#0d244b] hover:bg-[#0a1d3d] rounded-full shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] [font-family:'Lato',Helvetica] font-black text-white text-xs tracking-[0] leading-[18px] whitespace-nowrap border-0">
+            <Button 
+              onClick={() => window.open("https://admissions.gyanvihar.org/", "_blank")}
+              className="h-auto px-6 py-2 bg-[#0d244b] hover:bg-[#0a1d3d] rounded-full shadow-[0px_4px_6px_-4px_#0000001a,0px_10px_15px_-3px_#0000001a] [font-family:'Lato',Helvetica] font-black text-white text-xs tracking-[0] leading-[18px] whitespace-nowrap border-0"
+            >
               LOGIN
             </Button>
           </div>
@@ -180,7 +183,10 @@ export const Body = (): JSX.Element => {
             >
               APPLY NOW
             </Button>
-            <Button className="w-full py-3 bg-[#0d244b] hover:bg-[#0a1d3d] rounded-full [font-family:'Lato',Helvetica] font-black text-white text-sm border-0">
+            <Button 
+              onClick={() => window.open("https://admissions.gyanvihar.org/", "_blank")}
+              className="w-full py-3 bg-[#0d244b] hover:bg-[#0a1d3d] rounded-full [font-family:'Lato',Helvetica] font-black text-white text-sm border-0"
+            >
               LOGIN
             </Button>
           </div>
