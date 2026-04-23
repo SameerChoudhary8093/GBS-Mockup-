@@ -33,6 +33,19 @@ export const Body = (): JSX.Element => {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
+      
+      // Highlight the form if scrolling to hero section
+      if (id === "hero") {
+        setTimeout(() => {
+          const formCard = el.querySelector('[class*="bg-white rounded-2xl"]');
+          if (formCard) {
+            formCard.classList.add("form-highlight");
+            setTimeout(() => {
+              formCard.classList.remove("form-highlight");
+            }, 3000);
+          }
+        }, 800); // Wait for scroll to complete
+      }
     }
     setMobileMenuOpen(false);
   };
